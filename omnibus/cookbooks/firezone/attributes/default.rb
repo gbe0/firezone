@@ -59,6 +59,12 @@ default['firezone']['group'] = 'firezone'
 # default route.
 default['firezone']['egress_interface'] = nil
 
+# Enable or disable IPv4 SNAT/masquerade rules to be added for interfaces on the server
+default['firezone']['masquerade_ipv4'] = true
+
+# Enable or disable IPv6 SNAT/masquerade rules to be added for interfaces on the server
+default['firezone']['masquerade_ipv6'] = true
+
 # Whether to use OpenSSL FIPS mode across Firezone. Default disabled.
 default['firezone']['fips_enabled'] = nil
 
